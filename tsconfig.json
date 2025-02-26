@@ -1,0 +1,16 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "strict": true, // Enforces strict type-checking
+    "target": "ESNext", // Supports modern JavaScript features
+    "module": "ESNext", // Uses ES module syntax
+    "moduleResolution": "Node", // Resolves module imports like Node.js
+    "allowJs": true, // Allows JavaScript files alongside TypeScript
+    "resolveJsonModule": true, // Enables importing JSON files
+    "isolatedModules": true, // Ensures each file is a module
+    "jsx": "react-jsx", // Enables JSX for React components
+    "baseUrl": "." // Makes imports easier
+  },
+  "include": ["src"], // Ensures TypeScript checks only the `src` folder
+  "exclude": ["node_modules"] // Excludes `node_modules` to improve performance
+}
